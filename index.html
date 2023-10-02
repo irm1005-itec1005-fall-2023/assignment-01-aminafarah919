@@ -69,7 +69,24 @@
     </section>
     <form action="/server-page-handling-form-data" method="post">
       <fieldset>
-        <legend>Feedback:</legend> <label for="Topic">Subject/Topic:</label> <input type="text" id="Topic" name="Topic" required=""> <label>Feedback Type:</label> <input type="radio" id="opinion" name="feedback_type" value="opinion" required=""> <label for="opinion">opinion</label> <input type="radio" id="recomendation" name="feedback_type" value="recomendation "> <label for="recomendation">recomendation</label> <input type="radio" id="Topic" name="feedback_type" value="Topic "> <label for="topic_suggestion">Topic</label> <label for="feedback">Feedback:</label><br>
+        <fieldset>
+          <legend>Feedback:</legend>
+          <label for="Topic">Subject/Topic:</label>
+          <input type="text" id="Topic" name="topic" required>
+          
+          <label>Feedback Type:</label>
+          <input type="radio" id="opinion" name="feedback_type" value="opinion" required>
+          <label for="opinion">Opinion</label>
+          
+          <input type="radio" id="recommendation" name="feedback_type" value="recommendation">
+          <label for="recommendation">Recommendation</label>
+          
+          <input type="radio" id="topic_suggestion" name="feedback_type" value="topic_suggestion">
+          <label for="topic_suggestion">Topic Suggestion</label>
+          
+          <label for="feedback">Feedback:</label><br>
+        </fieldset>
+        
         <textarea id="feedback" name="feedback" rows="4" cols="50" required=""></textarea>
       </fieldset>
     </form>
